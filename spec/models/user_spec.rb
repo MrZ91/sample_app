@@ -18,7 +18,6 @@ describe User do
 
   it { should be_valid }
 
-
   describe "when name is not present" do
     before { @user.name = " " }
     it { should_not be_valid }
@@ -94,8 +93,5 @@ describe User do
       it { should_not eq user_for_invalid_password }
       specify { expect(user_for_invalid_password).to be_false }
     end
-
-
   end
-
 end

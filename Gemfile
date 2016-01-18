@@ -9,12 +9,15 @@ gem 'bcrypt-ruby'
 group :development, :test do
   gem 'sqlite3', '1.3.8'
   gem 'rspec-rails', '2.13.1'
+  gem 'pry-rails'
 end
 
 group :test do
+  gem 'factory_girl_rails'
   gem 'selenium-webdriver', '2.35.1'
   gem 'capybara', '2.1.0'
 end
+
 
 gem 'sass-rails'
 gem 'uglifier', '2.1.1'
